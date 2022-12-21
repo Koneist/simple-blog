@@ -22,4 +22,4 @@ jobs:
     - name: Install modules
       run: npm install --prefix ./BackEnd
     - name: Test
-      run: npm test
+      run: npm test --prefix ./BackEnd
