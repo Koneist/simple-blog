@@ -15,7 +15,7 @@ services:
 
   backend:
     container_name: blogbackend
-    image: blogbackend
+    image: koneist/blogbackend:latest
     build:
       context: ./BackEnd
       dockerfile: Dockerfile
@@ -26,7 +26,7 @@ services:
 
   frontend:
     container_name: blogfrontend
-    image: blogfrontend
+    image: koneist/blogfrontend:latest
     build:
       context: ./FrontEnd
       dockerfile: Dockerfile
