@@ -21,12 +21,6 @@ services:
       dockerfile: Dockerfile
     ports:
       - "5000:2000"
-    environment:
-      - DB_PORT=5433
-      - DB_HOST=127.0.0.1
-      - DB_USER=admin
-      - DB_PASSWORD=root
-      - DB_NAME=blog
     depends_on:
       - database
 
