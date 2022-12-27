@@ -17,7 +17,7 @@ function App() {
     
     const createPost = (newPost) => {
         PostApi.createPost(newPost).then((post) => {
-            var createdPost = {...newPost, id: post.id, postTime: new Date(post.postTime)}
+            var createdPost = {...newPost, id: post.id, postTime: new Date(newPost.postTime)}
             setPosts([...posts, createdPost]);
         }).catch()
         setModal(false);
